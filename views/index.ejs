@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+<body>
+    <div class="container">
+        <div class="main">
+            <h2>Create new Posts</h2>
+            <form action="/post" method="post">
+                <input type="text" name="title" id="" placeholder="Title" required>
+                <textarea name="content" id="" cols="30" rows="10" placeholder="Write Your Content Here"></textarea>
+                <input type="text" name="authorName" id="" placeholder="Author Name">
+                <input type="submit" value="Post" id="submit">
+            </form>
+
+        </div>
+        <div class="posts">
+            <h3 id="yourPost">Your Posts</h3>
+            <ul>
+
+                <% for(var i= 0;i<blogList.length;i++){ var ind = "0"%>
+
+                    <li class=><a href= "/post/<%= blogList[i].id%>" class="listItems" >  <%= blogList[i].title %> </a> </li>
+                    
+                <% } %>
+                    
+            </ul>
+        </div>
+    </div>
+    <%- include("partials/footer.ejs")%>
+</body>
+</html>

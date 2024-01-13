@@ -1,0 +1,40 @@
+html,body{
+    min-height: 100%;
+    background: linear-gradient(to bottom right, #ffff99 0%, #ff9933 100%);
+    background-repeat: no-repeat;
+}
+.blog1{
+    width: 70%;
+    margin: 60px auto;
+    border: 1px solid wheat;
+    background-color: #FFE382;
+    border-radius: 30px;
+    box-shadow: 5px 5px 13px -5px ;
+    background-color: #FFC47E;
+}
+#blog-title{
+    padding: 10px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 2rem;
+}
+#blogCnt{
+    font-size: 1.25rem;
+    padding: 10px;
+
+}
+#authorName{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 10px;
+    text-align: right;
+}
+#backBtn{
+    color: rgb(94, 94, 246);
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin:  10px auto;
+    padding: 10px;
+    
+}

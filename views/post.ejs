@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+<body>
+    <div class="blog1">
+
+        <h2 id="blog-title"><%= blog.title %></h2>
+        <p id="blogCnt">
+            <%= blog.content  %>
+        </p>
+        <h3 id="authorName"><%= blog.authorName %></h3>
+        <a href="/" id="backBtn">Back</a>
+    </div>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>
